@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 200px;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+header nav a {
+  text-decoration: none;
+  color: #333333ff;
+  margin-left: 30px;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+header nav a:hover {
+  color: #2169b1;
+}
+section {
+  padding: 100px 200px;
+}
+.main {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url(/assets/images/background.jpg) no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.main h1 {
+  font-size: 1.4em;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.main h1 span {
+  font-size: 2.8em;
+  font-weight: 900;
+  color: #5483b3;
+}
+
+.main h2 {
+  font-size: 2em;
+  font-weight: 800;
+  font-family: "Lato";
+  color: rgb(255, 255, 255);
+}
+.main-btn {
+  background-color: #5483b3;
+  color: white;
+  font-size: 1.1em;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 0.9375em 2.1875em;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  transition: 0.7s ease;
+}
+.main-btn:hover {
+  background-color: #2169b1;
+  transform: scale(1.1);
+}
+
+.Social_icon a {
+  font-size: 2.5em;
+  color: #5483b3;
+  padding-right: 30px;
+}
+/*Skills Section*/
+.title {
+  color: #333333ff;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #c1e8ff;
+  border-radius: 25px;
+  width: 10.625em;
+  height: 10.625em;
+  padding: 35px;
+  margin: 10px;
+  text-align: center;
+}
+.card > img {
+  margin-bottom: 10px;
+}
+.title_icon {
+  font-size: 1.1em;
+  font-weight: 500;
+  font-family: "Lato";
+}
+/*Portfolio Section*/
+.portfolio {
+  background-color: #c1e8ff;
+}
+.portfolio .content {
+  margin-top: 30px;
+}
+.project_card {
+  background-color: white;
+  width: 23em;
+  min-height: 14em;
+  border-radius: 10px;
+  border: 1px solid white;
+  overflow: hidden;
+  margin: 20px;
+  transition: 0.7s ease;
+}
+.project_card:hover {
+  transform: scale(1.1);
+}
+.project_card:hover .project_image {
+  opacity: 0.9;
+}
+.project_image img {
+  width: 100%;
+}
+.info {
+  padding: 1em;
+}
+.project_paragraph {
+  font-family: "Lato";
+  font-size: 0.8em;
+}
+.project_title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+.more_details {
+  text-decoration: none;
+  color: #5483b3;
+}
+
+.more_details:hover {
+  color: #2169b1;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  padding: 40px;
+  width: 21.25em;
+  min-height: 10em;
+  transition: 0.7s ease;
+}
+.contact_card:hover {
+  transform: scale(1.1);
+}
+.contact .icon {
+  color: #5483b3;
+  font-size: 4.5em;
+}
+
+.contact-info {
+  text-align: center;
+}
+.contact-info h3 {
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 15px;
+  color: #333333ff;
+}
+.contact-info p {
+  font-size: 1.2em;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
+  color: #333333ff;
+}
+/* Footer */
+footer {
+  background-color: #333333ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  color: white;
+}
+footer > .Social_icon > a {
+  color: white;
+  font-size: 2em;
+}
+footer p span {
+  color: #5483b3;
+}
+footer p {
+  font-size: 1.4rem;
+}
+/* Responsiveness */
+@media (max-width: 1023px) {
+  header {
+    padding: 12px 20px;
+  }
+  .navigation a {
+    padding-left: 10px;
+  }
+  .title {
+    font-size: 1.8em;
+  }
+  section {
+    padding: 80px 20px;
+  }
+  .main h2 {
+    font-size: 1.8em;
+  }
+  .main h3 {
+    font-size: 1.6em;
+  }
+  .card > img {
+    margin-bottom: 16px;
+  }
+  .title_icon {
+    font-size: 0.8em;
+    font-weight: 500;
+    font-family: "Lato";
+  }
+}
+@media (max-width: 641px) {
+  body {
+    font-size: 12px;
+  }
+  .main h2 {
+    font-size: 1.6em;
+  }
+  .main h3 {
+    font-size: 1.4em;
+  }
+  .card > img {
+    margin-bottom: 16px;
+  }
+  .title_icon {
+    font-size: 0.8em;
+    font-weight: 500;
+    font-family: "Lato";
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    font-size: 10px;
+  }
+  .card > img {
+    margin-bottom: 16px;
+  }
+  .title_icon {
+    font-size: 0.8em;
+    font-weight: 500;
+    font-family: "Lato";
+  }
+}
