@@ -253,6 +253,13 @@ footer p {
     font-weight: 500;
     font-family: "Lato";
   }
+  footer > .Social_icon > a {
+  color: white;
+  font-size: 1.2em;
+}
+footer p {
+  font-size: 0.7rem;
+}
 }
 @media (max-width: 641px) {
   body {
@@ -272,6 +279,13 @@ footer p {
     font-weight: 500;
     font-family: "Lato";
   }
+  footer > .Social_icon > a {
+  color: white;
+  font-size: 1.2em;
+}
+footer p {
+  font-size: 0.7rem;
+}
 }
 
 @media (max-width: 300px) {
@@ -286,4 +300,11 @@ footer p {
     font-weight: 500;
     font-family: "Lato";
   }
+  footer > .Social_icon > a {
+  color: white;
+  font-size: 1.2em;
+}
+footer p {
+  font-size: 0.7rem;
+}
 }
