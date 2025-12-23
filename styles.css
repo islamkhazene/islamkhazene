@@ -308,17 +308,38 @@ footer p {
   font-size: 0.7rem;
 }
 }
-/* ===== Portfolio Video Fixes Only ===== */
-
-.portfolio-separator {
-  width: 100%;
-  text-align: center;
-  margin: 40px 0 20px;
-  font-size: 1.8em;
-  font-weight: 700;
-  color: #2169b1;
+/* ===== Portfolio Layout ===== */
+.portfolio-section {
+  padding: 60px 0;
 }
 
+.portfolio-title {
+  font-size: 28px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.portfolio-divider {
+  height: 1px;
+  background: rgba(255,255,255,0.15);
+  margin: 70px 0;
+}
+
+/* ===== Grids ===== */
+.portfolio-grid {
+  display: grid;
+  gap: 25px;
+}
+
+.vertical-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.horizontal-grid {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+/* ===== Video Card ===== */
 .project_image {
   position: relative;
   width: 100%;
@@ -335,28 +356,41 @@ footer p {
   aspect-ratio: 16 / 9;
 }
 
-.project_image img,
 .project_image iframe {
   width: 100%;
   height: 100%;
+  border: 0;
 }
 
-.project_image img {
-  object-fit: cover;
-  display: block;
-}
-
-.project_image iframe {
+/* ===== Play Icon ===== */
+.play-icon {
   position: absolute;
   inset: 0;
-  border: 0;
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
 }
 
-.project_image.playing img {
-  display: none;
+.play-icon::before {
+  content: "";
+  width: 72px;
+  height: 72px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 50%;
 }
 
-.project_image.playing iframe {
-  display: block;
+.play-icon::after {
+  content: "";
+  position: absolute;
+  margin-left: 6px;
+  width: 0;
+  height: 0;
+  border-left: 18px solid #fff;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+
+.project_image.playing .play-icon {
+  display: none;
 }
